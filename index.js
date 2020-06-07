@@ -1,7 +1,7 @@
 /*
  * @Author: Bing Xu
  * @Date: 2020-06-07 14:44:08
- * @LastEditTime: 2020-06-07 20:03:15
+ * @LastEditTime: 2020-06-07 20:04:58
  * @LastEditors: Bing Xu
  * @Description: api入口文件
  * @FilePath: /node-practice/index.js
@@ -24,7 +24,7 @@ app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE')
   next()
 })
-morgan.format('log', '[request] :method :url :status :response-time ms');
+morgan.format('log', '[request] :method :url :status :response-time ms'); // 打印日志
 app.use(morgan('log'));
 app.use('/api', routes.router)
 
