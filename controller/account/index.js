@@ -1,13 +1,13 @@
 /*
  * @Author: Bing Xu
  * @Date: 2020-06-07 15:27:20
- * @LastEditTime: 2020-06-07 15:37:30
+ * @LastEditTime: 2020-06-07 20:02:54
  * @LastEditors: Bing Xu
  * @Description: 
  * @FilePath: /node-practice/controller/account/index.js
  */ 
 
-const login = (req, res) => {
+async function login (req, res) {
   try {
     // do sth
     res.send({code: 0, msg: '登录成功'})
